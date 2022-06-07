@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<!DOCTYPE Xdmf SYSTEM "Xdmf.dtd" []>
+<Xdmf Version="3.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <Domain>
+    <Grid Name="TimeSeries_djdAlpha" GridType="Collection" CollectionType="Temporal">
+      <Grid Name="mesh" GridType="Uniform">
+        <Topology NumberOfElements="102852" TopologyType="Triangle" NodesPerElement="3">
+          <DataItem Dimensions="102852 3" NumberType="UInt" Format="HDF">smith_glacier_test_inv_grads.h5:/Mesh/0/mesh/topology</DataItem>
+        </Topology>
+        <Geometry GeometryType="XY">
+          <DataItem Dimensions="51854 2" Format="HDF">smith_glacier_test_inv_grads.h5:/Mesh/0/mesh/geometry</DataItem>
+        </Geometry>
+        <Time Value="1" />
+        <Attribute Name="djdAlpha" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="51854 1" Format="HDF">smith_glacier_test_inv_grads.h5:/VisualisationVector/0</DataItem>
+        </Attribute>
+      </Grid>
+    </Grid>
+    <Grid Name="TimeSeries_djdBeta" GridType="Collection" CollectionType="Temporal">
+      <Grid Name="mesh" GridType="Uniform">
+        <Topology NumberOfElements="102852" TopologyType="Triangle" NodesPerElement="3">
+          <DataItem Dimensions="102852 3" NumberType="UInt" Format="HDF">smith_glacier_test_inv_grads.h5:/Mesh/1/mesh/topology</DataItem>
+        </Topology>
+        <Geometry GeometryType="XY">
+          <DataItem Dimensions="51854 2" Format="HDF">smith_glacier_test_inv_grads.h5:/Mesh/1/mesh/geometry</DataItem>
+        </Geometry>
+        <Time Value="1" />
+        <Attribute Name="djdBeta" AttributeType="Scalar" Center="Node">
+          <DataItem Dimensions="51854 1" Format="HDF">smith_glacier_test_inv_grads.h5:/VisualisationVector/1</DataItem>
+        </Attribute>
+      </Grid>
+    </Grid>
+  </Domain>
+</Xdmf>

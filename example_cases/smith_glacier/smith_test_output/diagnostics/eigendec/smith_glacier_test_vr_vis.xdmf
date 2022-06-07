@@ -1,0 +1,83 @@
+<?xml version="1.0"?>
+<!DOCTYPE Xdmf SYSTEM "Xdmf.dtd" []>
+<Xdmf Version="3.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <Domain>
+    <Grid Name="TimeSeries" GridType="Collection" CollectionType="Temporal">
+      <Grid Name="mesh" GridType="Uniform">
+        <Topology NumberOfElements="102852" TopologyType="Triangle" NodesPerElement="3">
+          <DataItem Dimensions="102852 3" NumberType="UInt" Format="HDF">smith_glacier_test_vr_vis.h5:/Mesh/0/mesh/topology</DataItem>
+        </Topology>
+        <Geometry GeometryType="XY">
+          <DataItem Dimensions="51854 2" Format="HDF">smith_glacier_test_vr_vis.h5:/Mesh/0/mesh/geometry</DataItem>
+        </Geometry>
+        <Time Value="0" />
+        <Attribute Name="ev" AttributeType="Vector" Center="Node">
+          <DataItem Dimensions="51854 3" Format="HDF">smith_glacier_test_vr_vis.h5:/VisualisationVector/0</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid>
+        <xi:include xpointer="xpointer(//Grid[@Name=&quot;TimeSeries&quot;]/Grid[1]/*[self::Topology or self::Geometry])" />
+        <Time Value="1" />
+        <Attribute Name="ev" AttributeType="Vector" Center="Node">
+          <DataItem Dimensions="51854 3" Format="HDF">smith_glacier_test_vr_vis.h5:/VisualisationVector/1</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid>
+        <xi:include xpointer="xpointer(//Grid[@Name=&quot;TimeSeries&quot;]/Grid[1]/*[self::Topology or self::Geometry])" />
+        <Time Value="2" />
+        <Attribute Name="ev" AttributeType="Vector" Center="Node">
+          <DataItem Dimensions="51854 3" Format="HDF">smith_glacier_test_vr_vis.h5:/VisualisationVector/2</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid>
+        <xi:include xpointer="xpointer(//Grid[@Name=&quot;TimeSeries&quot;]/Grid[1]/*[self::Topology or self::Geometry])" />
+        <Time Value="3" />
+        <Attribute Name="ev" AttributeType="Vector" Center="Node">
+          <DataItem Dimensions="51854 3" Format="HDF">smith_glacier_test_vr_vis.h5:/VisualisationVector/3</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid>
+        <xi:include xpointer="xpointer(//Grid[@Name=&quot;TimeSeries&quot;]/Grid[1]/*[self::Topology or self::Geometry])" />
+        <Time Value="4" />
+        <Attribute Name="ev" AttributeType="Vector" Center="Node">
+          <DataItem Dimensions="51854 3" Format="HDF">smith_glacier_test_vr_vis.h5:/VisualisationVector/4</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid>
+        <xi:include xpointer="xpointer(//Grid[@Name=&quot;TimeSeries&quot;]/Grid[1]/*[self::Topology or self::Geometry])" />
+        <Time Value="5" />
+        <Attribute Name="ev" AttributeType="Vector" Center="Node">
+          <DataItem Dimensions="51854 3" Format="HDF">smith_glacier_test_vr_vis.h5:/VisualisationVector/5</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid>
+        <xi:include xpointer="xpointer(//Grid[@Name=&quot;TimeSeries&quot;]/Grid[1]/*[self::Topology or self::Geometry])" />
+        <Time Value="6" />
+        <Attribute Name="ev" AttributeType="Vector" Center="Node">
+          <DataItem Dimensions="51854 3" Format="HDF">smith_glacier_test_vr_vis.h5:/VisualisationVector/6</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid>
+        <xi:include xpointer="xpointer(//Grid[@Name=&quot;TimeSeries&quot;]/Grid[1]/*[self::Topology or self::Geometry])" />
+        <Time Value="7" />
+        <Attribute Name="ev" AttributeType="Vector" Center="Node">
+          <DataItem Dimensions="51854 3" Format="HDF">smith_glacier_test_vr_vis.h5:/VisualisationVector/7</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid>
+        <xi:include xpointer="xpointer(//Grid[@Name=&quot;TimeSeries&quot;]/Grid[1]/*[self::Topology or self::Geometry])" />
+        <Time Value="8" />
+        <Attribute Name="ev" AttributeType="Vector" Center="Node">
+          <DataItem Dimensions="51854 3" Format="HDF">smith_glacier_test_vr_vis.h5:/VisualisationVector/8</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid>
+        <xi:include xpointer="xpointer(//Grid[@Name=&quot;TimeSeries&quot;]/Grid[1]/*[self::Topology or self::Geometry])" />
+        <Time Value="9" />
+        <Attribute Name="ev" AttributeType="Vector" Center="Node">
+          <DataItem Dimensions="51854 3" Format="HDF">smith_glacier_test_vr_vis.h5:/VisualisationVector/9</DataItem>
+        </Attribute>
+      </Grid>
+    </Grid>
+  </Domain>
+</Xdmf>
